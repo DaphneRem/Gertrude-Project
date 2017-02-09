@@ -10,7 +10,7 @@ class Menu extends React.Component {
 			<div>
 
 				<p>Menu</p>
-
+				<Plat1/>
 
 			</div>
 			);
