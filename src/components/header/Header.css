@@ -1,0 +1,86 @@
+.nav-bar {
+    margin : 0;
+    padding :0;
+    display : flex;
+    justify-content : space-between;
+    width: 100%;
+    box-shadow : 0 2px 4px 0 rgba(0,0,0,0.30);
+}
+.logo img {
+    margin : 20px;
+    height : 90px;
+    width : 70px;
+}
+.titre {
+    margin-left : 230px;
+    margin-top: 20px;
+}
+.ulButton {
+    display : flex;
+    align-items : center;
+    padding : 20px;
+}
+.nav {
+    display : flex;
+    list-style-type: none;
+}
+.nav li {
+    margin : 20px;
+    height : 30px;
+}
+.btn1 {
+    height : 50px;
+    margin : 0px 20px;
+    background : none;
+    border     : 2px solid transparent;
+    outline    : none;
+    color : #DB302C;
+}
+.btn1:hover {
+    height : 50px;
+    margin : 0px 20px;
+    background : none;
+    border     : 2px solid transparent;
+    outline    : none;
+    color : #DB302C;
+    background-color: white;
+}
+
+@media screen and (max-width : 600px) {
+    .titre {
+        margin : 0;
+        padding: 0;
+        font-size: 16px;
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titre h1 {
+        padding: 0;
+        margin:0;
+        font-size: 22px;
+    }
+
+    .ulButton {
+        padding : 0;
+        width : 100px;
+        margin-left: -10px;
+        display : flex;
+        flex-direction: row;
+    }
+    .nav {
+        display : none;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    .nav li {
+        display : none;
+        visibility: hidden;
+    }
+    .btn1 {
+        /*float: right;*/
+    }
+}
