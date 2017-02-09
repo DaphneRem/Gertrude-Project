@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
+    "react-bootstrap-sweetalert": "^3.0.0",
     "react-dom": "^15.4.2"
   },
   "scripts": {
@@ -15,5 +16,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boris-pozzo/Gertrude-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boris-pozzo/Gertrude-Project/issues"
+  },
+  "homepage": "https://github.com/boris-pozzo/Gertrude-Project#readme"
 }
