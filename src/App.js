@@ -12,9 +12,6 @@ class App extends Component {
     return (
       <div>
 
-        <h1> HELLO WORLD </h1>
-
-
         <Header/>
         <Slider/>
         <Presentation/>
