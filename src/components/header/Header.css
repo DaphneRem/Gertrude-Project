@@ -45,6 +45,10 @@
     color : #DB302C;
     background-color: white;
 }
+.nav-mobile {
+    display: none;
+    visibility: hidden;
+}
 
 @media screen and (max-width : 600px) {
     .titre {
@@ -83,4 +87,21 @@
     .btn1 {
         /*float: right;*/
     }
-}
+    .nav-mobile {
+        display: flex;
+        justify-content: space-around;
+        visibility: visible;
+        background: black;
+        padding : 10px 20px;
+
+    }
+    a {
+        color : white;
+        text-decoration : none;
+    }
+    a:hover {
+        color : #DB302C;
+        text-decoration : none;
+    }
+
+    }

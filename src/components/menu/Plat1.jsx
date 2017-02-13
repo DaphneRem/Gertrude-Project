@@ -4,6 +4,7 @@ import Thumbnail from 'react-bootstrap/lib/Thumbnail';
 import Col from 'react-bootstrap/lib/Col';
 import './stylecard.css';
 import SweetAlert from 'react-bootstrap-sweetalert';
+import $ from "jquery";
 
 
 
@@ -16,6 +17,12 @@ constructor(props) {
       alert: null
     };
   } 
+
+  getInitialState= function() {
+      return {
+        added: false
+      };
+    }
 
   addItem() {
 
@@ -34,6 +41,27 @@ constructor(props) {
       alert: getAlert()
 
     });
+
+    const addToCart = (e) => {
+      if(!this.state.added) {
+        // add
+        $.publish('cart.added', this.props.data);
+        console.log('working');
+      }
+      else {
+        // remove
+        $.publish('cart.removed', this.props.data.id);
+      }
+
+      this.setState({
+        added: !this.state.added
+      });
+    }
+
+
+
+
+
   }
 
   hideAlert() {
@@ -42,7 +70,6 @@ constructor(props) {
     });
   }
 
- 
 
 	render() {
 

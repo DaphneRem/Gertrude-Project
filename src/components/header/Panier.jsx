@@ -5,21 +5,21 @@ import contenu from '../data/data.js';
 
 
 class Panier extends React.Component {
-		
+
 
 		 dataJson(){
 		return contenu.carte.map(function(el){
 			return (<div className="cart">
- 
+
 						<div className="cart-image">
 							<img src={el.image} alt="menu" width="100px" height="100px" />
-						</div> 
+						</div>
 						 <div className="cart-description">
 							<h3 className="cart-name">{el.name}</h3>
 
 
 
-							
+
 							<div >{el.price}</div>
 						</div>
 					</div> )
