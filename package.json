@@ -9,6 +9,7 @@
     "react": "^15.4.2",
     "react-boostrap-carousel": "^2.0.4",
     "react-bootstrap": "^0.30.7",
+    "react-bootstrap-sweetalert": "^3.0.0",
     "react-dom": "^15.4.2"
   },
   "scripts": {
@@ -17,16 +18,20 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+
   "description": "Projet de 3 jours à faire en groupe",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hassan75/Gertrude-Project.git"
+    "url": "https://github.com/hassan75/Gertrude-Project.git"
   },
+
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hassan75/Gertrude-Project/issues"
+    "url": "https://github.com/boris-pozzo/Gertrude-Project/issues"
   },
-  "homepage": "https://github.com/hassan75/Gertrude-Project#readme"
+  "homepage": "https://github.com/boris-pozzo/Gertrude-Project#readme"
+
 }
