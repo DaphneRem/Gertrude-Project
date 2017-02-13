@@ -1,0 +1,8 @@
+.carrou{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+}

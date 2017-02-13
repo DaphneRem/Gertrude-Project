@@ -5,7 +5,7 @@ import Presentation from './components/presentation/Presentation';
 import Menu from './components/menu/Menu';
 import GoogleMap from './components/googleMap/GoogleMap';
 import Footer from './components/footer/Footer';
-import Panier from './components/header/Panier';
+
 
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
       <div>
 
         <Header/>
-      
+
         <Slider/>
         <Presentation/>
         <Menu/>
