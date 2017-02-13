@@ -1,6 +1,6 @@
 import React from 'react';
-import Panier from './Panier';
 import './Header.css';
+import Panier from './Panier';
 
 class Header extends React.Component {
 
@@ -16,13 +16,14 @@ class Header extends React.Component {
 					<ul className="nav">
 						<li><a href="#">Accueil</a></li>
 						<li><a href="#classContainer">Carte</a></li>
+
 						<li><a href="#">Contact</a></li>
 					</ul>
-					<button className="btn1"><i className="fa fa-shopping-basket fa-3x"></i></button>
-
+					<button className="btn1" onClick={this.props.click}><i className="fa fa-shopping-basket fa-3x"></i></button>	
 				</div>
-
+				<Panier />
 			</div>
+
 			);
 	}
 }

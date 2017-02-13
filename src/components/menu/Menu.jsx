@@ -35,15 +35,7 @@ class Menu extends React.Component {
 	}
 }
 
-Menu.propTypes= {
-  content: React.PropTypes.arrayOf(React.PropTypes.shape({
-  name: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired,
-  image: React.PropTypes.string.isRequired,
-  price: React.PropTypes.string.isRequired,
-  id: React.PropTypes.number.isrequired,
-  })).isRequired,
-};
+
 
 
 export default Menu;

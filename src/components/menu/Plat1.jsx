@@ -6,6 +6,7 @@ import './stylecard.css';
 import SweetAlert from 'react-bootstrap-sweetalert';
 
 
+
 class Plat1 extends React.Component {
 	
 constructor(props) {
@@ -16,15 +17,22 @@ constructor(props) {
     };
   } 
 
-  showModal() {
-    const getAlert = () => (
-      <SweetAlert success title="Vous avez ajouté ce repas à votre panier" 
-      onConfirm={() => this.hideAlert()}>
-	  </SweetAlert>
-    );
+  addItem() {
 
+  	console.log(this.props.price)
+
+    const getAlert = () => (
+      <SweetAlert success title={this.props.name}
+      onConfirm={() => this.hideAlert()}>
+      ajouté au panier
+      
+	  </SweetAlert>
+	
+    );
+     
     this.setState({
       alert: getAlert()
+
     });
   }
 
@@ -34,20 +42,22 @@ constructor(props) {
     });
   }
 
+ 
+
 	render() {
 
 
 		return (
 			<div id="cardContainer">
+					{this.state.alert}
 				    <Col xs={12} md={4} sm={6}>
 				      <Thumbnail src={this.props.image} alt="242x200">
-				        <h3>{this.props.name}</h3>
-				        <p>{this.props.description}</p>
-				        <p>{this.props.price}</p>
+				        <h3 className="text-center">{this.props.name}</h3>
+				        <p className="text-justify" height="100">{this.props.description}</p>
+				        <h4 className="text-center">{this.props.price}</h4>
 				        <p>
-				      	{this.state.alert}
-						<Button bsStyle="danger" onClick={() => this.showModal()}>Commander</Button>&nbsp;
-				        <Button bsStyle="default">Button</Button>
+				      	
+						<Button bsStyle="danger" className="center-block" block bsSize="large"  onClick={() => this.addItem()}>Commander</Button>&nbsp;
 				        </p>
 				      </Thumbnail>
 				    </Col>	
@@ -56,12 +66,7 @@ constructor(props) {
 	}
 }
 
-Plat1.propTypes= {
-  name: React.PropTypes.string.isRequired,
-  description: React.PropTypes.string.isRequired,
-  image: React.PropTypes.string,
-  price: React.PropTypes.string.isRequired,
-};
+
 
 
 
