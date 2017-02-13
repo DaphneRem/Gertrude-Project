@@ -4,6 +4,24 @@ import Panier from './Panier';
 
 class Header extends React.Component {
 
+ constructor(props) {
+    super(props);
+    
+
+    this.state = {
+      showComponent: false,
+    };
+
+    this.modalCart= this.modalCart.bind(this);
+  }
+
+  modalCart() {
+    this.setState({
+      showComponent: !this.state.showComponent,
+
+    });
+
+  }
 
 	render() {
 		return (
@@ -19,9 +37,14 @@ class Header extends React.Component {
 
 						<li><a href="#">Contact</a></li>
 					</ul>
-					<button className="btn1" onClick={this.props.click}><i className="fa fa-shopping-basket fa-3x"></i></button>	
+					<button className="btn1" onClick={this.modalCart}><i className="fa fa-shopping-basket fa-3x"></i></button>	
 				</div>
-				<Panier />
+				
+
+				{this.state.showComponent ?
+           <Panier /> :
+           null
+        }
 			</div>
 
 			);
