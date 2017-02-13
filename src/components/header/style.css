@@ -1,0 +1,27 @@
+.cart-container{
+	width: 40%;
+	height: 500px;
+	position: fixed;
+	right: 0;
+	z-index: 99;
+	margin-top: 130px;
+}
+
+.cart{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.test{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+.cart-image{
+	display: inline-block;
+}
+
+.cart-description{
+	margin-left: 10px;
+}
