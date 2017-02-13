@@ -3,6 +3,7 @@ import Plat1 from './Plat1';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import contenu from '../data/data.js';
+import $ from "jquery";
 
 class Menu extends React.Component {
 
@@ -16,6 +17,7 @@ class Menu extends React.Component {
 						image={el.image} /> )
 		});
 	};
+	
 
 	render() {
 
